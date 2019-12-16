@@ -5,3 +5,12 @@ const url = 'https://api.darksky.net/forecast/5abf12e75f7516f76fe1069a6eae5cec/2
 request({url: url, json:true} , (error, response) => {
     console.log(response.body.currently)
 })
+
+const HoustonWeather = () => {
+    document.getElementById("houston").addEventListener("click", () => { 
+        console.log('work')
+    })
+}
+
+HoustonWeather()
+
